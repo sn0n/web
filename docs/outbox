@@ -1,0 +1,29 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://sn0n.com/outbox",
+  "summary": "sn0n.com, the personal website of rob, erm,... sn0n.",
+  "type": "OrderedCollection",
+  
+  
+  "totalItems": 1,
+  "orderedItems": [
+  
+    {
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "id": "https://personal.community/@sn0n/executive-dysfunction-and-ai",
+      "type": "Create",
+      "actor": "https://sn0n.com/rob",
+      "object": {
+        "id": "https://personal.community/@sn0n/executive-dysfunction-and-ai",
+        "type": "Note",
+        "content": "April 28th, 2023<br><a href='https://personal.community/@sn0n/executive-dysfunction-and-ai'>https://personal.community/@sn0n/executive-dysfunction-and-ai</a>",
+        "url": "https://personal.community/@sn0n/executive-dysfunction-and-ai",
+        "attributedTo": "https://sn0n.com/rob",
+        "to": "https://www.w3.org/ns/activitystreams#Public",
+        "published": "2023-04-30T01:03:18"
+      }
+    }
+
+  
+  ]
+}

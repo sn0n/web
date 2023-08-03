@@ -1,0 +1,390 @@
+html {
+  font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
+  font-family: system-ui;
+  max-width: 70ch;
+  text-align: center;
+  margin: auto;
+  overflow-wrap: break-word;
+  background-attachment: fixed;
+  background-image: url("../images/back.webp");
+
+}
+
+body :not(:is(h1, h2, h3, h4, h5, h6)) {
+  line-height: 1.75;
+}
+
+body {
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-top: #fff;
+  padding: 0em;
+  margin: 0em;
+  /* Enables font size scaling in MSIE */
+  padding-top: 2em;
+}
+
+#blokzCanva {
+  margin: auto;
+  width: 50%;
+}
+
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  image-rendering: pixelated;
+}
+
+.doNotDisplay {
+  display: none;
+}
+
+.superHeader {
+  color: white;
+  background-color: rgb(100, 135, 220);
+  height: 2em;
+}
+
+.superHeader .left {
+  position: absolute;
+  left: 1.5mm;
+  top: 0.75ex;
+}
+
+
+.midHeader {
+  color: rgb(39, 78, 144);
+  background-color: rgb(140, 170, 230);
+}
+
+.headerTitle {
+  font-weight: normal;
+  margin: 0 0 0 4mm;
+  padding: 0.25ex 0;
+}
+
+.subHeader {
+  color: white;
+  background-color: rgb(0, 51, 153);
+  margin: 0;
+  padding: 1ex 1ex 1ex 1.5mm;
+}
+
+.subHeader a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.75ex 0 0.5ex;
+}
+
+
+#side-bar {
+  visibility: hidden;
+  width: 20ch;
+  float: left;
+  clear: left;
+  border-right: 1px solid rgb(153, 153, 153);
+}
+
+#side-bar div {
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.sideBarTitle {
+  font-weight: bold;
+  margin: 0 0 0.5em 2.5mm;
+  padding: 1em 0 0 0;
+}
+
+#side-bar ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0 0 1.1em 0;
+}
+
+#side-bar li {
+  margin: 0;
+  padding: 0.1ex 0;
+  /* Circumvents a rendering bug (?) in MSIE 6.0 */
+}
+
+#side-bar a,
+.thisPage {
+  color: rgb(0, 102, 204);
+  background-color: transparent;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.75em 1ex 0.75em 5mm;
+  display: block;
+}
+
+#side-bar a:hover {
+  color: white;
+  background-color: rgb(100, 135, 220);
+  text-decoration: none;
+}
+
+.sideBarText {
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  padding: 0 1.5ex 0 2.5mm;
+  display: block;
+}
+
+#side-bar .sideBarText a {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.lighterBackground {
+  color: inherit;
+  background-color: white;
+}
+
+/* ##### Main Copy ##### */
+#main-copy {
+  color: black;
+  background-color: white;
+  text-align: justify;
+  line-height: 1.5em;
+  min-height: 100vh;
+  padding: 0.5mm 5mm 5mm 5mm;
+  border-left: 1px solid rgb(153, 153, 153);
+  margin: 0;
+}
+
+#main-copy p {
+  margin: 1em 1ex 2em 1ex;
+  padding: 0;
+}
+
+#main-copy a {
+  color: rgb(0, 102, 204);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy a:hover {
+  text-decoration: none;
+}
+
+
+
+
+#footer {
+  margin: 0;
+  padding: 1em 2.5mm 22.5ex 2.5mm;
+  clear: both;
+}
+
+#footer .right {
+  text-align: right;
+  line-height: 1.45em;
+}
+
+#footer a {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy .topOfPage {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 2.5ex 1ex 0 0;
+  /* For MSIE */
+  padding: 0;
+  float: right;
+}
+
+#main-copy>.topOfPage {
+  margin: 2.75ex 1ex 0 0;
+  /* For fully standards-compliant user agents */
+}
+
+.pre {
+  outline: 1px solid #000;
+  padding: 5px;
+  overflow: auto;
+  font-family: 'Monaco', monospace;
+  padding: 1em 1em;
+}
+
+
+.string {
+  color: green;
+  overflow-wrap: break-word;
+}
+
+.number {
+  color: darkorange;
+}
+
+.boolean {
+  color: blue;
+}
+
+.null {
+  color: magenta;
+}
+
+.key {
+  color: red;
+}
+
+img {
+  max-width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #000;
+  padding: 10px 10px 10px 10px;
+
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav>.nav-links>a:hover {
+  background-color: #58E973;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: #333;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+
+
+#hb_title {
+  margin: 0px; 
+  padding: 0px;
+}
+
+#hb_post {
+  margin: 0px;
+  padding: 0px;
+}
+
+#hb_postbody {
+  padding: 1em;
+}
